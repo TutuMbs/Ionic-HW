@@ -7,11 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  mensagem: string='';
+  n1: string='';
+  n2: string='';
+  res:number=0;
   constructor() {}
 
-  exibirMensagem(){
-this.mensagem ='bem vindo ao ionic';
-  }
+ somar(){
+  this.res=parseFloat(this.n1)+parseFloat(this.n2)
+ }
 
 }

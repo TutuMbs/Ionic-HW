@@ -18,10 +18,21 @@
     <p>VAI ARRUMAR UM EMPREGO<a target="_blank" rel="noopener noreferrer" href="https://br.linkedin.com/">clica aqui </a></p>
   </div>
 
-  <div id="button"><ion-button expand="block" (click)="exibirMensagem()">clique aqui</ion-button>
+  <ion-item>
+    <ion-label position="floating">Digite o Primeiro Número </ion-label>
+    <ion-input [(ngModel)]="n1" type="number" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Digite o Segundo Número </ion-label>
+    <ion-input [(ngModel)]="n2" type="number"></ion-input>
+  </ion-item>
+
+  <div id="button"><ion-button expand="block" (click)="somar()">clique aqui</ion-button>
     <ion-item>
       <ion-label> </ion-label>
-      <ion-input value={{mensagem}} [readonly]="true" ></ion-input>
+      <ion-input value={{res}} [readonly]="true" ></ion-input>
     </ion-item>
+
   </div>
 </ion-content>
