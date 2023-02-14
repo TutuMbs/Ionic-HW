@@ -28,11 +28,11 @@
     <ion-input [(ngModel)]="n2" type="number"></ion-input>
   </ion-item>
 
-  <div id="button"><ion-button expand="block" (click)="somar()">clique aqui</ion-button>
-    <ion-item>
-      <ion-label> </ion-label>
-      <ion-input value={{res}} [readonly]="true" ></ion-input>
-    </ion-item>
-
+  <div id="button"><ion-button expand="block" (click)="somar()">Somar</ion-button>
+    <div id="button"><ion-button expand="block" (click)="subtrair()">Subtrair</ion-button>
+    <div id="button"><ion-button expand="block" (click)="multiplicar()">multiplicar</ion-button>
+    <div id="button"><ion-button expand="block" (click)="dividir()">dividir</ion-button>
+     
+        <ion-input value={{res}} [readonly]="true" ></ion-input>
   </div>
 </ion-content>
