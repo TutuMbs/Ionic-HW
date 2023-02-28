@@ -6,25 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  n1: string='';
-  n2: string='';
-  res:number=0;
+ n1: string='';
+ n2: string='';
+ res:number=0;
   constructor() {}
 
- somar(){
-  this.res=parseFloat(this.n1)+parseFloat(this.n2)
- }
- subtrair(){
-  this.res=parseFloat(this.n1)-parseFloat(this.n2)
- }
-multiplicar(){
-  this.res=parseFloat(this.n1)*parseFloat(this.n2)
- }
-
-dividir(){
-  this.res=parseFloat(this.n1)/parseFloat(this.n2)
- }
-
+  somar(){
+    this.res=parseFloat(this.n1)+parseFloat(this.n2);
+  }
+  subtrair(){
+    this.res=parseFloat(this.n1)-parseFloat(this.n2);
+  }
+  dividir(){
+    this.res=parseFloat(this.n1)/parseFloat(this.n2);
+  }
+ multiplicar(){
+    this.res=parseFloat(this.n1)*parseFloat(this.n2);
+  }
 
 }

@@ -1,38 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Meu primeiro APP
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>VAI ARRUMAR UM EMPREGO<a target="_blank" rel="noopener noreferrer" href="https://br.linkedin.com/">clica aqui </a></p>
-  </div>
 
   <ion-item>
-    <ion-label position="floating">Digite o Primeiro Número </ion-label>
-    <ion-input [(ngModel)]="n1" type="number" ></ion-input>
+    <ion-label position="floating">Digite o primeiro número</ion-label>
+    <ion-input [(ngModel)]="n1" type="number"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label position="floating">Digite o Segundo Número </ion-label>
+    <ion-label position="floating">Digite o segundo número</ion-label>
     <ion-input [(ngModel)]="n2" type="number"></ion-input>
   </ion-item>
 
-  <div id="button"><ion-button expand="block" (click)="somar()">Somar</ion-button>
-    <div id="button"><ion-button expand="block" (click)="subtrair()">Subtrair</ion-button>
-    <div id="button"><ion-button expand="block" (click)="multiplicar()">multiplicar</ion-button>
-    <div id="button"><ion-button expand="block" (click)="dividir()">dividir</ion-button>
-     
-        <ion-input value={{res}} [readonly]="true" ></ion-input>
-  </div>
+  <ion-button expand="block" (click)="somar()">Somar</ion-button>
+  <ion-button expand="block" (click)="subtrair()">Subtrair</ion-button>
+  <ion-button expand="block" (click)="dividir()">Dividir</ion-button>
+  <ion-button expand="block" (click)="multiplicar()">Multiplicar</ion-button>
+  <ion-input  [readonly]="true" value="{{res}}"></ion-input>
+
+
 </ion-content>
+
+
